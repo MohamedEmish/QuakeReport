@@ -152,6 +152,7 @@ public final class QueryUtils {
             JSONObject jsonObject = new JSONObject(earthquakeJSON);
             JSONArray jsonArray = jsonObject.optJSONArray("features");
             for (int i = 0; i < jsonArray.length(); i++) {
+
                 JSONObject feature = jsonArray.getJSONObject(i);
                 JSONObject properties = feature.getJSONObject("properties");
 
